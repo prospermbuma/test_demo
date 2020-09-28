@@ -1,0 +1,584 @@
+/*================================
+# General
+================================*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #f8f9fa;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span {
+    color: #daae1f;
+}
+
+/*================================
+# Header
+================================*/
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    background: #fff;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.nav .brand {
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 70px;
+    color: #000;
+}
+
+.menu {
+    margin: 0 100px 0 0;
+}
+
+.menu .active {
+    color: #000;
+    border-left: #daae1f 3px solid;
+    border-width: 4px;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    padding-left: 8px;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 17px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+    .nav .brand {
+        margin-left: 20px;
+        font-size: 26px;
+    }
+    .menu {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .nav .brand {
+        margin-left: 20px;
+        font-size: 26px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        margin: 0 20px 0 0;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0 20px 0 0;
+        background: #f8f9fa;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
+/*================================
+# Main
+================================*/
+
+main {
+    position: relative;
+}
+
+.contents {
+    background: url('../img/sketch.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #f8f9fa;
+}
+
+.hero-text {
+    width: 60%;
+    margin-top: 110px;
+}
+
+.hero-text h5 {
+    font-size: 20px;
+    width: 60%;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    width: 54%;
+    font-size: 70px;
+    margin-top: 0px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.hero-text p {
+    width: 60%;
+    text-align: left;
+    margin-top: -35px;
+    line-height: 1.8rem;
+    padding-left: 100px;
+}
+
+.hero-text .btn {
+    border: none;
+    color: #000;
+    background: #daae1f;
+    width: 30%;
+    padding: 15px 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 50px;
+    font-size: 17px;
+}
+
+.hero-text .btn:hover {
+    cursor: pointer;
+    background: #caaa40;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-text {
+        width: 50%;
+    }
+    .hero-text h1 {
+        font-size: 45px;
+        padding-left: 100px;
+        text-align: left;
+    }
+    .hero-text p {
+        text-align: left;
+        margin-top: -25px;
+        line-height: 1.8rem;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-text {
+        display: none;
+    }
+}
+
+.hero .card {
+    width: 25%;
+    margin-top: 120px;
+    height: 450px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+    color: #000;
+    margin-right: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero .card {
+        width: 40%;
+        margin: 0px 0px;
+        margin-right: 40px;
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero .card {
+        width: 80%;
+        margin: 0px 0px;
+        margin-right: 0px;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero .card {
+        width: 80%;
+        margin: 0px 0px;
+        margin-right: 0px;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .hero .card {
+        width: 90%;
+        margin: 0px 0px;
+        margin-right: 0px;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero .card {
+        width: 95%;
+        margin: 0px 0px;
+        margin-right: 0px;
+        margin-top: 80px;
+    }
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 40px;
+}
+
+.hero form h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.hero form a {
+    text-decoration: none;
+    color: #767676;
+    font-size: 14px;
+}
+
+.hero hr {
+    background: #daae1f;
+    width: 100%;
+}
+
+.hero input {
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: none;
+    border: 2px solid #daae1f;
+    border-radius: 5px;
+}
+
+.hero input[type=submit] {
+    background: #daae1f;
+    font-size: 14px;
+}
+
+.hero input[type=submit]:hover {
+    background: #caaa40;
+    cursor: pointer;
+}
+
+.hero .forgot {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero form {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        padding: 30px;
+    }
+    .hero .forgot {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: wrap row;
+        margin-top: 35px;
+    }
+}
+
+/* == Portifolio == */
+
+#portifolio {
+    margin-top: 30px;
+}
+
+#portifolio .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#portifolio h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#portifolio .row {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#portifolio .card {
+    width: 23%;
+    height: auto;
+    margin: 0 10px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    #portifolio .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #portifolio .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #portifolio .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #portifolio .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+#portifolio .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#portifolio .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#portifolio .inner {
+    overflow: hidden;
+}
+
+#portifolio .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear 1s;
+}
+
+#portifolio .img-fluid:hover {
+    filter: grayscale(80%);
+    transform: scale(1.3);
+    transition: linear 1s;
+}
+
+#portifolio .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#portifolio .card-body h3, p, a {
+    line-height: normal;
+}
+
+#portifolio .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#portifolio .card-body a {
+    text-decoration: none;
+    color: #daae1f;
+}
+
+#portifolio .card-body .dots {
+    font-size: 10px;
+}
+
+/* == Services == */
+
+#services {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    #services {
+        margin-top: 0px;
+    }
+}
+
+#services .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#services h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#services .row {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#services .card {
+    width: 23%;
+    height: auto;
+    margin: 0 10px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    #services .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #services .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #services .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #services .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+#services .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#services .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#services .inner {
+    overflow: hidden;
+}
+
+#services .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear 1s;
+}
+
+#services .img-fluid:hover {
+    filter: grayscale(80%);
+    transition: linear 1s;
+    transform: scale(1.3);
+}
+
+#services .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#services .card-body h3, p, a {
+    line-height: normal;
+}
+
+#services .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#services .card-body a {
+    text-decoration: none;
+    color: #daae1f;
+}
+
+#services .card-body .dots {
+    font-size: 10px;
+}
+
+/*================================
+# Footer
+================================*/
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: #767676;
+}
