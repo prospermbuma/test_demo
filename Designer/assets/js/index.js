@@ -1,10 +1,10 @@
 // OnFocus Event
-function myFocus() {
+function foCus() {
     document.getElementById('username').style.border = ' 2px solid #1e90ff';
 }
 
-// OnBlur Event
-function myBlur() {
+// OnFocus Event
+function foCus_1() {
     document.getElementById('password').style.border = ' 2px solid #1e90ff';
 }
 
