@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>foobar</title>
+		<style>
+
+			* {
+				margin : 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				display: flex;
+				height: 100vh;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				background-color: #222f35;
+			}
+
+			.img {
+				position: relative;
+				width: 300px;
+				height: 450px;
+				display: inline-block;
+				border-radius: 8px;
+				overflow: hidden;
+				margin: 15px;
+				border: 2px solid #fff;
+			}
+
+			.img p {
+				color: #f8f9fa;
+				padding: 20px 10px 10px 20px;
+				line-height: 1.2rem;
+				font-size: 15px;
+				font-family: 'Courier New', Courier, monospace;
+			}
+
+			.img:hover img {
+				opacity: 0;
+			}
+
+			.img:hover img.hover-img {
+				opacity: 1;
+			}
+
+			img {
+				width: 100%;
+				transition: all linear 0.7s;
+				cursor: pointer;
+			}
+
+			img.hover-img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div class="img">
+			<img src="sandals.jpg" alt="">
+			<img class="hover-img" src="sandals-0.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laudantium eum molestiae vitae adipisci. Accusamus, voluptate quod molestiae dignissimos, dolorem rem reiciendis ipsam labore maxime excepturi illo, deserunt odio ea!
+			</p>
+		</div>
+		<div class="img">
+			<img src="simple-10.jpg" alt="">
+			<img class="hover-img" src="simple-11.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laudantium eum molestiae vitae adipisci. Accusamus, voluptate quod molestiae dignissimos, dolorem rem reiciendis ipsam labore maxime excepturi illo, deserunt odio ea!
+			</p>
+		</div>
+		<div class="img">
+			<img src="simple-3.jpg" alt="">
+			<img class="hover-img" src="simple-12.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laudantium eum molestiae vitae adipisci. Accusamus, voluptate quod molestiae dignissimos, dolorem rem reiciendis ipsam labore maxime excepturi illo, deserunt odio ea!
+			</p>
+		</div>
+		<div class="img">
+			<img src="simple-7.jpg" alt="">
+			<img class="hover-img" src="simple-4.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laudantium eum molestiae vitae adipisci. Accusamus, voluptate quod molestiae dignissimos, dolorem rem reiciendis ipsam labore maxime excepturi illo, deserunt odio ea!
+			</p>
+		</div>
+
+		<script src="practices.js"></script>
+	</body>
+</html>

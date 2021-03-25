@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td.blue {
+            background-image: linear-gradient(to left, rgb(226, 14, 173), rgba(17, 13, 240, 0.787));
+            animation: bg 10s infinite alternate;
+        }
+
+        @keyframes bg {
+            0% {
+                background: url('worship.jpg');
+                background-attachment: fixed;
+                /* background-size: cover; */
+                background-repeat: no-repeat;
+            }
+
+            25% {
+                background: url('worship-2.jpg');
+                background-attachment: fixed;
+                /* background-size: cover; */
+                background-repeat: no-repeat;
+            }
+
+            50% {
+                background: url('made.jpg');
+                background-attachment: fixed;
+                /* background-size: cover; */
+                background-repeat: no-repeat;
+            }
+
+            75% {
+                background: url('refuge.jpg');
+                background-attachment: fixed;
+                /* background-size: cover; */
+                background-repeat: no-repeat;
+            }
+        }
+
+        .blue h1 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 30px;
+            color: #faf8f9;
+            word-spacing: normal;
+            animation: sider 2s infinite alternate;
+        }
+
+        @keyframes sider {
+            from {
+                transform: translateX(-20px);
+            }
+
+            to {
+                transform: translateX(80px);
+                color: rgb(255, 166, 0);
+            }
+        }
+
+        td.dark {
+            background-color: #faf8f9;
+        }
+
+        img {
+            transition: all 1s;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(0.9);
+            transition: all 1s;
+            /* filter: grayscale(80%); */
+            /* filter: contrast(50%); */
+            filter: brightness(1) invert(1);
+            box-shadow: 0px 3px 3px 0px rgb(226, 14, 173);
+        }
+
+        label {
+            padding-right: 12px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            transition: all 1s;
+        }
+
+        form:hover {
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+
+        input[type=text] {
+            padding: 9px 12px;
+        }
+
+        input[type=submit] {
+            padding: 9px 12px;
+            border: none;
+            background: #767676;
+            color: #faf8f9;
+            transition: linear 1s;
+        }
+
+        input[type=submit]:hover {
+            color: #faf8f9;
+            background: brown;
+            cursor: pointer;
+            transition: linear 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table width="100%" border="0" cellpadding="2" cellspacing="2">
+        <tr>
+            <td width="80%" class="blue">
+                <h1>My School</h1>
+                <marquee style="color: #faf8f9; font-size: 20px; font-style: italic;" behavior="" direction="left">I
+                    love my school</marquee>
+            </td>
+            <td width="30px" class="dark">
+                <form action="#" method="post">
+                    <label for="School Name">School Name</label>
+                    <input type="text" name="school" id="school" placeholder="Enter school name">
+                    <br>
+                    <label for="School Region">School Region</label>
+                    <input type="text" name="region" id="region" placeholder="Enter school region">
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <img src="worship.jpg" alt="worship" width="100%" height="30%">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table width="100%" cellpadding="10" cellspacing="10" border="1">
+                    <tr>
+                        <th>S/N</th>
+                        <th>STUDENT NAME</th>
+                        <th>REGISTRATION NUMBER</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Prosper Nicholas Mbuma</td>
+                        <td>IMC/DCIT/1913226</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Teshaki Nyakunga</td>
+                        <td>IMC/DCIT/192343</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Neema Mushi</td>
+                        <td>IMC/DCIT/192354</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

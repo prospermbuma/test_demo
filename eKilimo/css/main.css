@@ -1,0 +1,206 @@
+/* Body */
+body {
+    overflow-x: hidden;
+    
+}
+/* Body */
+
+/* ----------======================================================================----------- */
+
+/* Document style all elements */
+* {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Document style all elements */
+
+/* ----------======================================================================----------- */
+
+/* Navigation */
+.navbar {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+/* Navigation */
+
+/* ----------======================================================================----------- */
+
+/* Home header background*/
+/*.backg {
+    background-image: linear-gradient(to left, rgba(0,255,0,0), rgba(150,130,0,0.4));
+    
+}*/
+
+.backg #main-section {
+    /*background: rgba(66, 23, 25, 0.87);*/
+    height: 750px;
+}
+/* Home header background*/
+
+/* ----------======================================================================----------- */
+
+/* Home jumbotron */
+#jumbotron {
+    box-shadow: 0px 0px 5px 0px #808080;
+    background-image: linear-gradient(to right, rgba(0,255,0,0.0), rgba(150,160,0,0.6));
+    margin-top: -210px;
+}
+
+@media (max-width: 501px) {
+    #jumbotron {
+        margin-top: -120px;
+    }
+}
+/* Home jumbotron */
+
+/* ----------======================================================================----------- */
+
+/* Logo style */
+#logo {
+    transition: all 1s;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+/* Logo style */
+
+/* ----------======================================================================----------- */
+
+/* Images style */
+#img {
+    transition: all 1s;
+}
+
+#img:hover {
+    transition: all 1s;
+    filter: grayscale(100%);
+}
+/* Images style */
+
+/* ----------======================================================================----------- */
+
+/*#partners #friends {
+    /*background: #356;
+}
+*/
+
+/* ----------======================================================================----------- */
+
+/* Cards style */
+div.card {
+    border: none;
+    transition: all 0.5s;
+    box-shadow: 0px 5px 5px 0px #808080;
+}
+
+div.card:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    /*transform: translate(50px, 100px);*/
+    filter: grayscale(100%);
+}
+
+@media (max-width: 1200px) {
+    div.card:hover {
+        transform: scale(0.9);
+    }
+}
+/* Cards style */
+
+/* ----------======================================================================----------- */
+
+/*FOOTER SOCIAL MEDIA ICONS*/
+.fab {
+	color: #808080;
+	transition: 0.5s;
+}
+
+.fa-facebook-f:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-twitter:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-instagram:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-linkedin-in:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-pinterest:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+.fa-google-plus-g:hover {
+	color: silver;
+	opacity: 0.8;
+}
+/*FOOTER SOCIAL MEDIA ICONS*/
+
+/* ----------======================================================================----------- */
+
+
+/* Go top */
+#go-top {
+    background: #808080;
+    color: #ffffff;
+    padding: 13px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    transition: all 1s;
+    opacity: 0.9;
+}
+
+#go-top:hover {
+    color: #000000;
+}
+/* Go top */
+
+/* ----------======================================================================----------- */
+
+/* Media queries */
+@media (max-width: 1120px) {
+    li a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1054px) {
+    li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    li a {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1120px) {
+    li a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 320px) {
+    #agric {
+        font-size: 50px;
+    }
+}
+/* Media queries */
+
+/* ----------======================================================================----------- */
+

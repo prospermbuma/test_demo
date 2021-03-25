@@ -1,0 +1,24 @@
+Positions
+
+1. Static
+
+The default anf this is the flow of the document.
+
+2. Relative
+
+Position determined by the first STATIC element.
+It is followed by the following properties:
+ * top
+ * bottom
+ * left
+ * right
+ 
+3. Absolute
+
+Position determined by the first NON-STATIC element.
+It is followed by the following properties:
+
+ * top
+ * bottom
+ * left
+ * right
