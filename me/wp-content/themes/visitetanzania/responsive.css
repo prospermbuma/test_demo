@@ -1,0 +1,1364 @@
+@media all and (max-width: 709px) {
+	
+.logo {
+	width:15%;
+}
+
+.logo img {
+	width:30%;
+	height:30%;
+}
+
+.officialtext {
+	padding-right:0px;
+	font-size:17px;
+	padding-left:4%;
+	padding-bottom:0px;
+}
+
+
+.search {
+	padding-left:4%;	
+	width:75%;
+	padding-top:0px;
+
+}	
+
+.txtsearch {
+	width:85%;
+	font-size:15px;
+}
+
+.nav {
+	width:100%;
+}
+
+.nav ul {
+	padding-left:0px;
+}
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+	
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 20px 20px 15px;
+	}
+
+.nav ul li ul li a {
+	font-size:17px;	
+	}	
+
+
+
+.slideshow_title {
+	font-size:45px !important;
+}
+
+.slideshow_description {
+	font-size:20px !important;	
+}
+
+
+
+#innercontentcontainer .whattodocaption a, #contentcontainer .whattodocaption a {
+	font-size:17px;	
+}
+
+#innercontentcontainer .whattoseecaption a, #contentcontainer .whattoseecaption a {
+	font-size:17px;	
+}
+
+#innercontentcontainer .placestovisitcaption a, #contentcontainer .placestovisitcaption a {
+	font-size:17px;	
+}
+
+#innercontentcontainer .defaultcaption a, #contentcontainer .defaultcaption a   {
+	font-size:17px;	
+}
+
+.footercoltitle {
+	font-size:16px;	
+	padding-bottom:10px;	
+}
+
+.socialcoltitle {
+	font-size:16px;	
+	padding-bottom:10px;
+}
+
+.footercol1 {
+	width:15%;
+}
+
+.footercol3 {
+	width:17%;
+}
+
+.footercol5 {
+	width:32%;
+}
+
+.footercol2 ul, .footercol3 ul, .footercol4 ul, .footercol5 ul {
+	padding-top:10px;
+}
+
+.footercol2 ul li a, .footercol3 ul li a, .footercol4 ul li a, .footercol5 ul li a {
+	font-size:14px;	
+}	
+	
+.footerbottom {
+	font-size:13px;
+}
+
+.socialmediaicons {
+	padding:15px 0 10px 0;
+}
+
+.socialmediaicons img {
+	width:35px;
+	height:35px;
+}
+	
+#innercontentcontainer p {
+	font-size:16px;
+	line-height:25px;
+}
+
+#innercontentcontainer h2 {
+	font-size:25px;
+}	
+
+#innercontentcolleft {
+	width:100%;
+}
+
+#innercontentcolright {
+	width:100%;
+}
+
+#innercontentcolright .g {
+	width:30%;
+	padding-right:3%;
+	float:left;
+}
+
+#innercontentcolright .g-col {
+	margin-bottom:0px;
+}
+
+#innercontentcolright img.tourismdirbanner {
+	float:left;
+	width:33%;
+}
+
+#innercontentcolright img.hotelbookingbanner {
+	float:left;
+	clear:left;
+	width:33%;
+}
+
+
+.ktblogo img {
+	width:100%;
+	height:100%;
+}
+
+.innerpagetitle h1 {
+	font-size:35px;
+}
+
+#innerheadercontainer {
+	 padding-bottom: 20px;
+    padding-top: 15px;
+}
+	
+
+#contentcolleft {
+    float: left;
+    padding-bottom: 30px;
+    padding-right: 0;
+    width: 100%;
+}
+
+#contentcolright {
+    float: left;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+
+#contentcolright a {
+    float: left;
+    margin-bottom: 10px;
+	margin-right:20px;
+	width:45%;
+
+}
+
+#contentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#contentcontainer h1 {
+	font-size:26px;	
+}
+
+#contentcontainer .exploretext {
+    font-size: 33px;
+}
+
+#contentcontainer a.whattodolink {
+    font-size: 22px;
+}
+#contentcontainer a.whattoseelink {
+    font-size: 22px;
+}
+
+#contentcontainer a.placestovisitlink {
+    font-size: 22px;
+}
+
+
+#mainsections h2 {
+	font-size:26px;	
+}
+
+#mainsections p {
+	font-size:17px;
+	line-height:25px;	
+}
+
+
+.trip-details .control-group label {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group input {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group .control-text {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-activities .activityitemcontainer, .trip-events .eventitemcontainer {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;	
+}
+
+.trip-attractions .attractiontownitemwrapper {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractionitem input, .trip-activities .activityitem input , .trip-events .eventitem input{
+    font-size: 17px;
+    line-height: 25px;
+	height:25px;	
+}
+
+.trip-attractions .attractionitem label, .trip-attractions .attractionresultitem label, .trip-activities .activityitem label, .trip-events .eventitem label {
+    font-size: 17px;
+    line-height: 25px;	
+}
+	
+	
+}
+
+@media all and (min-width: 710px) and (max-width: 899px) {
+	
+.logo {
+	width:15%;
+}
+
+.logo img {
+	width:30%;
+	height:30%;
+}
+
+.officialtext {
+	padding-right:0px;
+	font-size:17px;
+	padding-left:4%;
+	padding-bottom:0px;
+}
+
+
+.search {
+	padding-left:0px;	
+	width:75%;
+	padding-top:0px;
+
+}	
+
+.txtsearch {
+	width:85%;
+	font-size:15px;
+}
+
+.nav {
+	width:100%;
+}
+
+.nav ul {
+	padding-left:0px;
+}
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+	
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 20px 20px 15px;
+	}
+
+.nav ul li ul li a {
+	font-size:17px;	
+	}	
+
+
+
+.slideshow_title {
+	font-size:45px !important;
+}
+
+.slideshow_description {
+	font-size:20px !important;	
+}
+
+
+
+#innercontentcontainer .whattodocaption a, #contentcontainer .whattodocaption a  {
+	font-size:17px;	
+}
+
+#innercontentcontainer .whattoseecaption a, #contentcontainer .whattoseecaption a {
+	font-size:17px;	
+}
+
+#innercontentcontainer .placestovisitcaption a, #contentcontainer .placestovisitcaption a {
+	font-size:17px;	
+}
+
+#innercontentcontainer .defaultcaption a, #contentcontainer .defaultcaption a  {
+	font-size:17px;	
+}
+
+.footercoltitle {
+	font-size:16px;	
+	padding-bottom:10px;	
+}
+
+.socialcoltitle {
+	font-size:16px;	
+	padding-bottom:10px;
+}
+
+.footercol1 {
+	width:15%;
+}
+
+.footercol3 {
+	width:17%;
+}
+
+.footercol5 {
+	width:32%;
+}
+
+.footercol2 ul, .footercol3 ul, .footercol4 ul, .footercol5 ul {
+	padding-top:10px;
+}
+
+.footercol2 ul li a, .footercol3 ul li a, .footercol4 ul li a, .footercol5 ul li a {
+	font-size:14px;	
+}	
+	
+.footerbottom {
+	font-size:13px;
+}
+
+.socialmediaicons {
+	padding:15px 0 10px 0;
+}
+
+.socialmediaicons img {
+	width:35px;
+	height:35px;
+}	
+	
+#innercontentcontainer p {
+	font-size:16px;
+	line-height:25px;
+}
+
+#innercontentcontainer h2 {
+	font-size:25px;
+}	
+
+#innercontentcolleft {
+	width:100%;
+}
+
+#innercontentcolright {
+	width:100%;
+}
+
+#innercontentcolright .g {
+	width:30%;
+	padding-right:3%;
+	float:left;
+}
+
+#innercontentcolright .g-col {
+	margin-bottom:0px;
+}
+
+#innercontentcolright img.tourismdirbanner {
+	float:left;
+	width:33%;
+}
+
+#innercontentcolright img.hotelbookingbanner {
+	float:left;
+	clear:left;
+	width:33%;
+}
+
+.ktblogo img {
+	width:100%;
+	height:100%;
+}
+
+.innerpagetitle h1 {
+	font-size:35px;
+}
+
+#innerheadercontainer {
+	 padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+#contentcolleft {
+    float: left;
+    padding-bottom: 30px;
+    padding-right: 0;
+    width: 100%;
+}
+
+#contentcolright {
+    float: left;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+
+#contentcolright a {
+    float: left;
+    margin-bottom: 10px;
+	margin-right:20px;
+	width:45%;
+
+}
+
+#contentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#contentcontainer h1 {
+	font-size:26px;	
+}
+
+#contentcontainer .exploretext {
+    font-size: 33px;
+}
+
+#contentcontainer a.whattodolink {
+    font-size: 22px;
+}
+#contentcontainer a.whattoseelink {
+    font-size: 22px;
+}
+
+#contentcontainer a.placestovisitlink {
+    font-size: 22px;
+}
+
+
+#mainsections h2 {
+	font-size:26px;	
+}
+
+#mainsections p {
+	font-size:17px;
+	line-height:25px;	
+}
+
+
+.trip-details .control-group label {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group input {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group .control-text {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-activities .activityitemcontainer, .trip-events .eventitemcontainer {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;	
+}
+
+.trip-attractions .attractiontownitemwrapper {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractionitem input, .trip-activities .activityitem input , .trip-events .eventitem input{
+    font-size: 17px;
+    line-height: 25px;
+	height:25px;	
+}
+
+.trip-attractions .attractionitem label, .trip-attractions .attractionresultitem label, .trip-activities .activityitem label, .trip-events .eventitem label {
+    font-size: 17px;
+    line-height: 25px;	
+}
+	
+
+	
+}
+
+
+@media all and (min-width: 900px) and (max-width: 974px) {
+	
+
+.logo {
+	width:15%;
+}
+
+.logo img {
+	width:30%;
+	height:30%;
+}
+
+.officialtext {
+	padding-right:0px;
+	font-size:17px;
+	padding-left:4%;
+	padding-bottom:0px;
+}
+
+
+.search {
+	padding-left:0px;	
+	width:75%;
+	padding-top:0px;
+
+}	
+
+.txtsearch {
+	width:85%;
+	font-size:15px;
+}
+
+.nav ul {
+	padding-left:10px;
+}
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+	
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 18px 20px 13px;
+	}
+
+.nav ul li ul li a {
+	font-size:17px;	
+	}	
+
+
+
+
+
+.slideshow_title {
+	font-size:45px !important;
+}
+
+.slideshow_description {
+	font-size:20px !important;	
+}
+
+
+
+#innercontentcontainer .whattodocaption a, #contentcontainer .whattodocaption a {
+	font-size:19px;	
+}
+
+#innercontentcontainer .whattoseecaption a, #contentcontainer .whattoseecaption a  {
+	font-size:19px;	
+}
+
+#innercontentcontainer .placestovisitcaption a, #contentcontainer .placestovisitcaption a {
+	font-size:19px;	
+}
+
+#innercontentcontainer .defaultcaption a, #contentcontainer .defaultcaption a  {
+	font-size:19px;	
+}
+
+.footercoltitle {
+	font-size:18px;	
+	padding-bottom:10px;	
+}
+
+.socialcoltitle {
+	font-size:18px;	
+	padding-bottom:10px;
+}
+
+.footercol2 ul, .footercol3 ul, .footercol4 ul, .footercol5 ul {
+	padding-top:10px;
+}
+
+.footercol2 ul li a, .footercol3 ul li a, .footercol4 ul li a, .footercol5 ul li a {
+	font-size:15px;	
+}	
+	
+.footerbottom {
+	font-size:15px;
+}
+
+.socialmediaicons {
+	padding:15px 0 10px 0;
+}
+
+.socialmediaicons img {
+	width:35px;
+	height:35px;
+}	
+	
+#innercontentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#innercontentcontainer h2 {
+	font-size:30px;
+}
+
+
+#contentcolleft {
+    float: left;
+    padding-bottom: 30px;
+    padding-right: 0;
+    width: 100%;
+}
+
+#contentcolright {
+    float: left;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+
+#contentcolright a {
+    float: left;
+    margin-bottom: 10px;
+	margin-right:20px;
+	width:31%;	
+}
+
+
+#contentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#contentcontainer h1 {
+	font-size:26px;	
+}
+
+#contentcontainer .exploretext {
+    font-size: 33px;
+}
+
+#contentcontainer a.whattodolink {
+    font-size: 22px;
+}
+#contentcontainer a.whattoseelink {
+    font-size: 22px;
+}
+
+#contentcontainer a.placestovisitlink {
+    font-size: 22px;
+}
+
+
+#mainsections h2 {
+	font-size:26px;	
+}
+
+#mainsections p {
+	font-size:17px;
+	line-height:25px;	
+}
+
+
+.trip-details .control-group label {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group input {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group .control-text {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-activities .activityitemcontainer, .trip-events .eventitemcontainer {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractiontownitemwrapper {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractionitem input, .trip-activities .activityitem input , .trip-events .eventitem input{
+    font-size: 17px;
+    line-height: 25px;
+	height:25px;	
+}
+
+.trip-attractions .attractionitem label, .trip-attractions .attractionresultitem label, .trip-activities .activityitem label, .trip-events .eventitem label {
+    font-size: 17px;
+    line-height: 25px;	
+}
+	
+	
+}
+
+@media all and (min-width: 975px) and (max-width: 1064px) {
+
+.logo {
+	width:15%;
+}
+
+.logo img {
+	width:30%;
+	height:30%;
+}
+
+.officialtext {
+	padding-right:0px;
+	font-size:19px;
+	padding-left:4%;
+	padding-bottom:0px;
+}
+
+
+.search {
+	padding-left:0px;	
+	width:75%;
+	padding-top:0px;
+
+}	
+
+.txtsearch {
+	width:85%;
+	font-size:15px;
+}
+
+.nav ul {
+	padding-left:10px;
+}
+
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 20px;
+	}
+
+.nav ul li ul li a {
+	font-size:17px;	
+	}	
+
+
+
+.slideshow_title {
+	font-size:45px !important;
+}
+
+.slideshow_description {
+	font-size:20px !important;	
+}
+
+
+
+#innercontentcontainer .whattodocaption a, #contentcontainer .whattodocaption a  {
+	font-size:19px;	
+}
+
+#innercontentcontainer .whattoseecaption a, #contentcontainer .whattoseecaption a {
+	font-size:19px;	
+}
+
+#innercontentcontainer .placestovisitcaption a, #contentcontainer .placestovisitcaption a {
+	font-size:19px;	
+}
+
+#innercontentcontainer .defaultcaption a, #contentcontainer .defaultcaption a   {
+	font-size:19px;	
+}
+
+.footercoltitle {
+	font-size:18px;	
+	padding-bottom:10px;	
+}
+
+.socialcoltitle {
+	font-size:18px;	
+	padding-bottom:10px;
+}
+
+.footercol2 ul, .footercol3 ul, .footercol4 ul, .footercol5 ul {
+	padding-top:10px;
+}
+
+.footercol2 ul li a, .footercol3 ul li a, .footercol4 ul li a, .footercol5 ul li a {
+	font-size:15px;	
+}
+
+.footerbottom {
+	font-size:15px;
+}
+
+.socialmediaicons img {
+	width:35px;
+	height:35px;
+}
+
+#innercontentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#innercontentcontainer h2 {
+	font-size:30px;
+}
+
+
+#contentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#contentcontainer h1 {
+	font-size:26px;	
+}
+
+#contentcontainer .exploretext {
+    font-size: 33px;
+}
+
+#contentcontainer a.whattodolink {
+    font-size: 22px;
+}
+#contentcontainer a.whattoseelink {
+    font-size: 22px;
+}
+
+#contentcontainer a.placestovisitlink {
+    font-size: 22px;
+}
+
+
+#mainsections h2 {
+	font-size:26px;	
+}
+
+#mainsections p {
+	font-size:17px;
+	line-height:25px;	
+}
+
+
+.trip-details .control-group label {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group input {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group .control-text {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-activities .activityitemcontainer, .trip-events .eventitemcontainer {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractiontownitemwrapper{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractionitem input, .trip-activities .activityitem input , .trip-events .eventitem input{
+    font-size: 17px;
+    line-height: 25px;
+	height:25px;	
+}
+
+.trip-attractions .attractionitem label, .trip-attractions .attractionresultitem label, .trip-activities .activityitem label, .trip-events .eventitem label {
+    font-size: 17px;
+    line-height: 25px;	
+}
+	
+}
+
+
+@media all and (min-width: 1065px) and (max-width: 1244px) {
+.logo {
+	width:15%;
+}
+
+.logo img {
+	width:30%;
+	height:30%;
+}
+
+.officialtext {
+	padding-right:0px;
+	font-size:19px;
+	padding-left:4%;
+	padding-bottom:0px;
+}
+
+
+.search {
+	padding-left:0px;	
+	width:75%;
+	padding-top:10px;
+
+}	
+
+.txtsearch {
+	width:85%;
+	font-size:15px;
+}
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 20px;
+	}
+
+.nav ul li ul li a {
+	font-size:17px;	
+	}	
+
+
+
+.slideshow_title {
+	font-size:45px !important;
+}
+
+.slideshow_description {
+	font-size:20px !important;	
+}
+
+
+#innercontentcontainer .whattodocaption a, #contentcontainer .whattodocaption a  {
+	font-size:19px;	
+}
+
+#innercontentcontainer .whattoseecaption a, #contentcontainer .whattoseecaption a {
+	font-size:19px;	
+}
+
+#innercontentcontainer .placestovisitcaption a, #contentcontainer .placestovisitcaption a {
+	font-size:19px;	
+}
+
+#innercontentcontainer .defaultcaption a, #contentcontainer .defaultcaption a   {
+	font-size:19px;	
+}
+
+.footercoltitle {
+	font-size:18px;	
+	padding-bottom:10px;	
+}
+
+.socialcoltitle {
+	font-size:18px;	
+	padding-bottom:10px;
+}
+
+.footercol2 ul, .footercol3 ul, .footercol4 ul, .footercol5 ul {
+	padding-top:10px;
+}
+
+.footercol2 ul li a, .footercol3 ul li a, .footercol4 ul li a, .footercol5 ul li a {
+	font-size:15px;	
+}
+
+.footerbottom {
+	font-size:15px;
+}
+
+.socialmediaicons img {
+	width:35px;
+	height:35px;
+}
+
+#innercontentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#innercontentcontainer h2 {
+	font-size:30px;
+}
+
+
+
+#contentcontainer p {
+	font-size:17px;
+	line-height:25px;
+}
+
+#contentcontainer h1 {
+	font-size:26px;	
+}
+
+#contentcontainer .exploretext {
+    font-size: 33px;
+}
+
+#contentcontainer a.whattodolink {
+    font-size: 22px;
+}
+#contentcontainer a.whattoseelink {
+    font-size: 22px;
+}
+
+#contentcontainer a.placestovisitlink {
+    font-size: 22px;
+}
+
+
+#mainsections h2 {
+	font-size:26px;	
+}
+
+#mainsections p {
+	font-size:17px;
+	line-height:25px;	
+}
+
+
+.trip-details .control-group label {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group input {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-details .control-group .control-text {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.trip-activities .activityitemcontainer, .trip-events .eventitemcontainer {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractiontownitemwrapper {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;	
+}
+
+.trip-attractions .attractionitem input, .trip-activities .activityitem input , .trip-events .eventitem input{
+    font-size: 17px;
+    line-height: 25px;
+	height:25px;	
+}
+
+.trip-attractions .attractionitem label, .trip-attractions .attractionresultitem label, .trip-activities .activityitem label, .trip-events .eventitem label {
+    font-size: 17px;
+    line-height: 25px;	
+}
+
+
+	
+}
+
+
+@media all and (min-width: 1245px) and (max-width: 1379px) {
+
+
+.logo {
+	width:15%;
+}
+
+.logo img {
+	width:30%;
+	height:30%;
+}
+
+.officialtext {
+	padding-right:0px;
+	font-size:19px;
+	padding-left:4%;
+	padding-bottom:0px;
+}
+
+
+.search {
+	padding-left:0px;	
+	width:75%;
+	padding-top:10px;
+
+}	
+
+.txtsearch {
+	width:85%;
+	font-size:15px;
+}
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 20px;
+	}
+
+.nav ul li ul li a {
+	font-size:17px;	
+	}	
+
+
+.slideshow_title {
+	font-size:50px !important;
+}
+
+.slideshow_description {
+	font-size:20px !important;	
+}
+
+
+
+#innercontentcontainer .whattodocaption a, #contentcontainer .whattodocaption a {
+	font-size:21px;	
+}
+
+#innercontentcontainer .whattoseecaption a, #contentcontainer .whattoseecaption a {
+	font-size:21px;	
+}
+
+#innercontentcontainer .placestovisitcaption a, #contentcontainer .placestovisitcaption a {
+	font-size:21px;	
+}
+
+#innercontentcontainer .defaultcaption a, #contentcontainer .defaultcaption a  {
+	font-size:21px;	
+}	
+
+.footercoltitle {
+	font-size:20px;	
+	padding-bottom:10px;	
+}
+
+.socialcoltitle {
+	font-size:20px;	
+	padding-bottom:10px;
+}
+
+.footercol2 ul, .footercol3 ul, .footercol4 ul, .footercol5 ul {
+	padding-top:10px;
+}
+
+.footercol2 ul li a, .footercol3 ul li a, .footercol4 ul li a, .footercol5 ul li a {
+	font-size:15px;	
+}
+	
+
+.trip-activities .activityitemcontainer, .trip-events .eventitemcontainer {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;	
+}
+
+.trip-attractions .attractiontownitemwrapper {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;	
+}
+
+	
+	
+}
+
+@media all and (min-width: 1380px) and (max-width: 1415px) {
+
+.logo {
+	width:15%;
+}
+
+.logo img {
+	width:30%;
+	height:30%;
+}
+
+.officialtext {
+	padding-right:0px;
+	font-size:19px;
+	padding-left:4%;
+	padding-bottom:0px;
+}
+
+
+.search {
+	padding-left:0px;	
+	width:75%;
+	padding-top:10px;
+
+}	
+
+.txtsearch {
+	width:85%;
+	font-size:15px;
+}
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 20px;
+	}
+
+.nav ul li ul li a {
+	font-size:17px;	
+	}		
+	
+
+#innercontentcontainer .whattodocaption a {
+	font-size:25px;	
+}
+
+#innercontentcontainer .whattoseecaption a {
+	font-size:25px;	
+}
+
+#innercontentcontainer .placestovisitcaption a {
+	font-size:25px;	
+}
+
+#innercontentcontainer .defaultcaption a  {
+	font-size:25px;	
+}	
+	
+}
+
+@media all and (min-width: 1416px) and (max-width: 1600px) {
+
+	.nav ul li {
+		padding-right:0px;
+
+	}
+
+	.nav ul li a {
+		
+	font-size:17px;
+	padding: 20px 20px;
+	}
+	
+.nav ul li ul li a {
+	font-size:17px;	
+	}		
+	
+
+#innercontentcontainer .whattodocaption a {
+	font-size:25px;	
+}
+
+#innercontentcontainer .whattoseecaption a {
+	font-size:25px;	
+}
+
+#innercontentcontainer .placestovisitcaption a {
+	font-size:25px;	
+}
+
+#innercontentcontainer .defaultcaption a  {
+	font-size:25px;	
+}	
+	
+}

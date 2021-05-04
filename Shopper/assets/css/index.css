@@ -1,0 +1,122 @@
+/* ======================================================
+# General
+====================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+section {
+    margin-top: 120px;
+}
+
+.flip-container {
+    display: flex;
+    max-width: 1100px;
+    padding: 0 40px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.flip3D {
+    margin: 0 15px;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.flip3D, .flip3D>.front, .flip3D>.back {
+    padding: 10px 30px 55px 30px;
+    width: 250px;
+    height: 190px;
+}
+
+.flip3D>.front {
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    background: #e3e3e3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s;
+}
+
+.flip3D:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D>.back {
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background: #e3e3e3;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s;
+}
+
+.flip3D:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+    background: #002240;
+    color: #f8f9fa;
+}
+
+.pt-2 {
+    padding-top: 1.5rem;
+}
+
+.back p {
+    line-height: 1.5rem;
+    font-size: 17px;
+}
+
+.back h2 {
+    font-weight: bold;
+}
+
+.add-cart-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-cart {
+    border: none;
+    outline: none;
+    background: #bd4343;
+    padding: 9px 12px;
+    border-radius: 3px;
+    color: #fff;
+    transition: color 0.3s ease;
+    order: 0;
+}
+
+.btn-cart:hover {
+    cursor: pointer;
+    color: #ffd900;
+}
+
+.badge-price {
+    font-weight: 600;
+    color: #ffd900;
+    font-size: 18px;
+}

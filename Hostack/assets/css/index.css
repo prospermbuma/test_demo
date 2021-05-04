@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/*===========================================================
+# General
+===========================================================*/
+
+/*----------------------------
+  =======
+# Colors
+  =======
+  #047ead
+  #047aed
+  #333
+  #fff
+  #b4becb
+-----------------------------*/
+
+/* Custom properties */
+
+/* This is used for more usable properties (repeated properties) */
+
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --white-color: #fff;
+    --light-color: #f4f4f4;
+}
+
+/* End Custom properties */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*===========================================================
+# Navigation
+===========================================================*/
+
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 70px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--white-color);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid var(--white-color);
+}
+
+/*===========================================================
+# Hero
+===========================================================*/
+
+.hero {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    position: relative;
+    /* That if we want position anything absolute it might be possible */
+}
+
+.hero::before, .hero::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.hero .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+.hero .hero-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.hero .hero-form .form-control {
+    margin: 30px 0;
+}
+
+.hero .hero-form .form-control input[type='text'], .hero .hero-form .form-control input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.hero .hero-form .form-control input:focus {
+    outline: none;
+}
+
+.hero .hero-form .btn {
+    outline: none;
+}
+
+/*===========================================================
+# Stats
+===========================================================*/
+
+.stats {
+    padding-top: 100px;
+}
+
+.stats .stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+.stats .grid h3 {
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*===========================================================
+# CLI
+===========================================================*/
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+
+/*===========================================================
+# Cloud
+===========================================================*/
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/*===========================================================
+# Languages
+===========================================================*/
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/*===========================================================
+# Footer
+===========================================================*/
+
+.footer .social a {
+    margin: 0 10px;
+}
