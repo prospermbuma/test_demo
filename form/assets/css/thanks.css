@@ -1,0 +1,92 @@
+/* ====================================================
+# General
+=====================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #5372F0;
+}
+
+/* ====================================================
+# Form Wrapper
+=====================================================*/
+
+.wrapper {
+    width: 600px;
+    background: #fff;
+    padding: 50px 40px 40px 40px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper header {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(24, 138, 24);
+    margin-bottom: 20px;
+}
+
+.wrapper a {
+    color: #5372F0;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.wrapper a:hover {
+    color: #bfbfbf;
+}
+
+
+/* === Media Query === */
+
+@media only screen and (max-width: 1060px) {
+    .wrapper {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .wrapper {
+        margin-top: 400px;
+        margin-bottom: 100px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .wrapper {
+        width: 100%;
+        padding: 50px 22px 40px 22px;
+    }
+}
+
+/* === End Query === */

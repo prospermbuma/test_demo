@@ -1,0 +1,118 @@
+/* ====================================================
+# View
+=====================================================*/
+
+#view .lead {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#view .table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#view table {
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    table-layout: auto;
+}
+
+#view table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+#view table tr:hover {
+    background-color: #e3e3e3;
+}
+
+#view table th {
+    padding: 10px 10px;
+    background: #fff;
+    color: #000;
+    text-align: left;
+    border-top: 2px solid #13256d;
+    border-bottom: 2px solid #13256d;
+}
+
+#view table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+#view .prev-next-btns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#view .prev-next-btns .btn {
+    text-decoration: none;
+    padding: 9px 24px;
+    background: #13256d;
+    border-radius: 5px;
+    color: #fff;
+    transition: all .3s;
+    border: 2px solid #13256d;
+}
+
+#view .prev-next-btns .btn-prev {
+    background: none;
+    color: #13256d;
+}
+
+#view .prev-next-btns .btn-prev:hover {
+    background: #13256d;
+    color: #fff;
+}
+
+#view .prev-next-btns .btn-next:hover {
+    border-color: #1f3aa3;
+    background: #1f3aa3;
+    color: #fff;
+}
+
+#view .text {
+    margin-top: 40px;
+}
+
+#view .text .para {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* === Media Query === */
+
+@media only screen and (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 0 30px;
+    }
+    .para {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .container {
+        padding: 0 20px;
+    }
+    #view .prev-next-btns .btn {
+        padding: 9px 24px;
+        font-size: 12px;
+    }
+}
+
+/* === End Query === */

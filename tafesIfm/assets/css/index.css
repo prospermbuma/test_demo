@@ -106,6 +106,7 @@ a {
     width: 100%;
     color: #fff;
     display: block;
+    outline: none;
 }
 
 .login-form .group .input, .login-form .group .button {
