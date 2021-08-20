@@ -1,0 +1,899 @@
+/* =======================================================
+# main | Hero
+======================================================= */
+
+#hero {
+    height: 700px;
+    position: relative;
+}
+
+#hero .hero-text {
+    margin-top: 120px;
+    width: 20%;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+#hero .hero-text p {
+    margin-top: -25px;
+    width: 50%;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.5rem;
+}
+
+#hero .hero-text .btn {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+#hero .social {
+    position: fixed;
+    z-index: 5;
+    margin-top: 200px;
+    right: 0;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+}
+
+#hero .social a {
+    color: #ddd;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#hero .social a:hover {
+    color: var(--danger-color);
+}
+
+#hero .social::before {
+    content: '';
+    position: absolute;
+    top: 1;
+    margin-top: -230px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+#hero .social::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin-top: 173px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+/* --=== Something cool is sliding ===-- */
+
+#back1 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#back2 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#back3 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#back4 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.backgroundimg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 800px;
+    width: 100%;
+}
+
+@keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#backgroundchange div:nth-of-type(1) {
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+#backgroundchange div:nth-of-type(2) {
+    animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+}
+
+#backgroundchange div:nth-of-type(3) {
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+
+#backgroundchange div {
+    animation-name: backgroundchangeFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    -webkit-animation-name: backgroundchangeFadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 20s;
+}
+
+/* --=== End something cool ===-- */
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 768px) {
+    #hero .hero-text {
+        margin-top: 100px;
+        width: 100%;
+    }
+    #hero .hero-text h1 {
+        line-height: 4.0rem;
+    }
+    #hero .hero-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+    #hero .social {
+        position: relative;
+        margin-top: -15px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        gap: 1.5rem;
+    }
+    #hero .social::before {
+        content: '';
+        position: absolute;
+        top: 1;
+        margin-top: 5px;
+        margin-right: 180px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+    #hero .social::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        margin-top: 18px;
+        margin-left: 180px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #hero {
+        height: 700px;
+    }
+    #hero .hero-text {
+        margin-top: 10px;
+        width: 100%;
+    }
+    #hero .hero-text h1 {
+        line-height: 4.0rem;
+    }
+    #hero .hero-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+    #hero .social {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #hero .hero-text h1 {
+        line-height: 3.5rem;
+        font-size: 40px;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Electrical Installation
+======================================================= */
+
+#electric-install {
+    padding: 90px 0;
+}
+
+#electric-install .electric-img img {
+    width: 430px;
+}
+
+#electric-install .electric-text h1 {
+    margin-top: -70px;
+    line-height: 6.5rem;
+}
+
+#electric-install .electric-text p {
+    margin-top: -70px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #electric-install .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #electric-install .electric-img img {
+        width: 100%;
+    }
+    #electric-install .electric-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #electric-install .electric-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #electric-install .container {
+        padding: 0 30px;
+    }
+    #electric-install .electric-img img {
+        width: 100%;
+    }
+    #electric-install .electric-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #electric-install .electric-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #electric-install .electric-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #electric-install .electric-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Civil Work
+======================================================= */
+
+#civil-work {
+    padding: 90px 0;
+}
+
+#civil-work .civil-img img {
+    width: 430px;
+}
+
+#civil-work .civil-text h1 {
+    margin-top: 90px;
+    line-height: 6.5rem;
+}
+
+#civil-work .civil-text p {
+    margin-top: -70px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #civil-work .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #civil-work .civil-img img {
+        width: 100%;
+    }
+    #civil-work .civil-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #civil-work .civil-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #civil-work .container {
+        padding: 0 30px;
+    }
+    #civil-work .civil-img img {
+        width: 100%;
+    }
+    #civil-work .civil-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #civil-work .civil-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #civil-work .civil-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #civil-work .civil-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Renewable Energy
+======================================================= */
+
+#renewable-energy {
+    padding: 90px 0;
+}
+
+#renewable-energy .renewable-img img {
+    width: 430px;
+}
+
+#renewable-energy .renewable-text h1 {
+    margin-top: -70px;
+    line-height: 6.5rem;
+}
+
+#renewable-energy .renewable-text p {
+    margin-top: -70px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #renewable-energy .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #renewable-energy .renewable-img img {
+        width: 100%;
+    }
+    #renewable-energy .renewable-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #renewable-energy .renewable-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #renewable-energy .container {
+        padding: 0 30px;
+    }
+    #renewable-energy .renewable-img img {
+        width: 100%;
+    }
+    #renewable-energy .renewable-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #renewable-energy .renewable-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #renewable-energy .renewable-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #renewable-energy .renewable-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Commercial
+======================================================= */
+
+#commercial {
+    height: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+#commercial .prev-icon, #commercial .next-icon {
+    position: absolute;
+    margin-top: 60px;
+    transition: all .3s;
+    font-size: 35px;
+    color: var(--light-color);
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#commercial .prev-icon {
+    left: 160px;
+}
+
+#commercial .next-icon {
+    right: 160px;
+}
+
+#commercial .prev-icon:hover, #commercial .next-icon:hover {
+    color: var(--light-gray-color);
+}
+
+#commercial .commercial-text {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    color: #fff;
+}
+
+#commercial .commercial-text p {
+    margin-top: -25px;
+    width: 100%;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.5rem;
+}
+
+#commercial .commercial-text .btn {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+#commercial .social {
+    position: absolute;
+    margin-top: 200px;
+    right: 0;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+}
+
+#commercial .social a {
+    color: #ddd;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#commercial .social a:hover {
+    color: var(--redish-color);
+}
+
+#commercial .social::before {
+    content: '';
+    position: absolute;
+    top: 1;
+    margin-top: -280px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+#commercial .social::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin-top: 223px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #commercial .prev-icon {
+        left: 130px;
+    }
+    #commercial .next-icon {
+        right: 130px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #commercial .prev-icon, #commercial .next-icon {
+        display: none;
+    }
+    #commercial .commercial-text {
+        margin-top: 100px;
+        width: 100%;
+    }
+    #commercial .commercial-text h1 {
+        line-height: 4.0rem;
+    }
+    #commercial .commercial-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+    #commercial .social {
+        position: relative;
+        margin-top: -15px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        gap: 1.5rem;
+    }
+    #commercial .social::before {
+        content: '';
+        position: absolute;
+        top: 1;
+        margin-top: 0px;
+        margin-right: 220px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+    #commercial .social::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        margin-top: 16px;
+        margin-left: 220px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #commercial {
+        height: 500px;
+    }
+    #commercial .commercial-text {
+        margin-top: 50px;
+        width: 100%;
+    }
+    #commercial .commercial-text h1 {
+        line-height: 4.0rem;
+    }
+    #commercial .commercial-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #commercial .commercial-text h1 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #commercial .commercial-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #commercial .commercial-text h1 {
+        line-height: 3.5rem;
+        font-size: 40px;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Substation Construction
+======================================================= */
+
+#sub-construction {
+    padding: 90px 0;
+}
+
+#sub-construction .sub-img img {
+    width: 430px;
+}
+
+#sub-construction .sub-text h1 {
+    margin-top: -70px;
+    line-height: 6.5rem;
+}
+
+#sub-construction .sub-text p {
+    margin-top: -70px;
+    line-height: 1.5rem;
+    font-size: 18px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #sub-construction .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #sub-construction .sub-img img {
+        width: 100%;
+    }
+    #sub-construction .sub-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #sub-construction .sub-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #sub-construction .container {
+        padding: 0 30px;
+    }
+    #sub-construction .sub-img img {
+        width: 100%;
+    }
+    #sub-construction .sub-text h1 {
+        margin-top: -0px;
+        font-size: 45px;
+        line-height: 3.0rem;
+    }
+    #sub-construction .sub-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #sub-construction .sub-text h1 {
+        margin-top: -0px;
+        font-size: 35px;
+        line-height: 3.0rem;
+    }
+    #sub-construction .sub-text p {
+        margin-top: -15px;
+        line-height: 1.5rem;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Testimonials
+======================================================= */
+
+#testimonials {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/80.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#testimonials h1 {
+    color: var(--light-color);
+    line-height: 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#testimonials h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    top: 1;
+    margin-left: 28px;
+    margin-top: 80px;
+    background: var(--danger-color);
+}
+
+#testimonials .card {
+    padding: 20px 30px;
+    transition: all .3s;
+    position: relative;
+}
+
+#testimonials .card:hover {
+    background: var(--danger-color);
+}
+
+#testimonials .card:hover>* {
+    color: var(--light-color);
+}
+
+#testimonials .card img {
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    z-index: 10;
+    filter: grayscale(100%);
+}
+
+#testimonials .rate-name {
+    margin-top: -22px;
+}
+
+@media only screen and (max-width: 1060px) {
+    #testimonials h1 {
+        font-size: 60px;
+    }
+    #testimonials h1::before {
+        margin-left: 12px;
+        margin-top: 58px;
+    }
+    #testimonials .rate-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #testimonials .rate-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #testimonials .container {
+        padding: 0 25px;
+    }
+    #testimonials h1 {
+        font-size: 30px;
+    }
+    #testimonials h1::before {
+        height: 4px;
+        margin-left: 8px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #testimonials .rate-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #testimonials h1 {
+        font-size: 25px;
+    }
+    #testimonials h1::before {
+        margin-left: 6px;
+        margin-top: 38px;
+    }
+}

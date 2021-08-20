@@ -1,0 +1,362 @@
+/* =======================================================
+# main | Services
+======================================================= */
+
+#services {
+    height: 400px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/80.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#services .services-text {
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    color: #fff;
+}
+
+#services .services-text p {
+    margin-top: -25px;
+    width: 100%;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.5rem;
+}
+
+#services .services-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#services .services-social a {
+    text-decoration: none;
+    color: var(--gray-color);
+    transition: all .3s;
+    font-size: 25px;
+}
+
+#services .services-social a:hover {
+    color: var(--light-gray-color);
+}
+
+#services .social {
+    position: absolute;
+    margin-top: 200px;
+    right: 0;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+}
+
+#services .social a {
+    color: #ddd;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#services .social a:hover {
+    color: var(--redish-color);
+}
+
+#services .social::before {
+    content: '';
+    position: absolute;
+    top: 1;
+    margin-top: -280px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+#services .social::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin-top: 223px;
+    width: 3px;
+    height: 50px;
+    background: #ddd;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 768px) {
+    #services .services-text {
+        margin-top: 60px;
+        width: 100%;
+    }
+    #services .services-text h1 {
+        line-height: 4.0rem;
+    }
+    #services .services-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+    #services .social {
+        position: relative;
+        margin-top: -15px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        gap: 1.5rem;
+    }
+    #services .social::before {
+        content: '';
+        position: absolute;
+        top: 1;
+        margin-top: 0px;
+        margin-right: 220px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+    #services .social::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        margin-top: 16px;
+        margin-left: 220px;
+        width: 30px;
+        height: 3px;
+        background: #ddd;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #services {
+        height: 370px;
+    }
+    #services .services-text {
+        margin-top: 50px;
+        width: 100%;
+    }
+    #services .services-text h1 {
+        line-height: 4.0rem;
+    }
+    #services .services-text p {
+        margin-top: -25px;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #services .services-text h1 {
+        line-height: 3.5rem;
+        font-size: 40px;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | services Cards
+======================================================= */
+
+#services-cards {
+    padding: 60px 0;
+}
+
+#services-cards h1 {
+    line-height: 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#services-cards h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    top: 1;
+    margin-left: 5px;
+    margin-top: 55px;
+    background: var(--danger-color);
+}
+
+#services-cards .side-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: .3rem;
+}
+
+#services-cards .side-cards-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: .3rem;
+}
+
+#services-cards .card {
+    transition: all 1s;
+}
+
+#services-cards .card:hover {
+    background: var(--danger-color);
+    color: var(--light-color);
+}
+
+#services-cards .card-img-top {
+    transition: all 1s;
+}
+
+#services-cards .card:hover .card-img-top {
+    transform: scale(1.2);
+}
+
+#services-cards .side-cards .card-body, #services-cards .side-cards-2 .card-body {
+    padding: 5px 30px 20px 30px;
+}
+
+#services-cards .side-cards .card h4, #services-cards .side-cards-2 .card h4 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 0rem;
+    text-transform: capitalize;
+}
+
+#services-cards .side-cards .card p, #services-cards .side-cards-2.card p {
+    margin-top: -7px;
+    font-size: 17px;
+}
+
+/* ==== Media Queries ==== */
+
+@media only screen and (max-width: 1060px) {
+    #services-cards .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #services-cards .side-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #services-cards .container {
+        padding: 0 20px;
+    }
+    #services-cards .side-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
+    }
+    #services-cards .side-cards-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: .3rem;
+    }
+    #services-cards h1 {
+        font-size: 30px;
+        margin-left: 16px;
+    }
+    #services-cards h1::before {
+        margin-left: 5px;
+        margin-top: 45px;
+    }
+}
+
+/* ==== End Queries ==== */
+
+/* =======================================================
+# main | Location
+======================================================= */
+
+#location {
+    padding-top: 60px;
+    padding-bottom: 140px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/75.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#location h1 {
+    color: var(--light-color);
+    line-height: 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#location h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    top: 1;
+    margin-left: 28px;
+    margin-top: 80px;
+    background: var(--danger-color);
+}
+
+#location h3 {
+    line-height: .6rem;
+    text-transform: uppercase;
+}
+
+#location .card {
+    padding: 20px 20px;
+    border-radius: 0px;
+}
+
+#location iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+@media only screen and (max-width: 1060px) {
+    #location h1 {
+        font-size: 60px;
+    }
+    #location h1::before {
+        margin-left: 12px;
+        margin-top: 58px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #location .container {
+        padding: 0 25px;
+    }
+    #location h1 {
+        font-size: 30px;
+    }
+    #location h1::before {
+        height: 4px;
+        margin-left: 8px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #location h1 {
+        font-size: 25px;
+    }
+    #location h1::before {
+        margin-left: 6px;
+        margin-top: 38px;
+    }
+}

@@ -1,0 +1,725 @@
+/* Custom properties */
+
+:root {
+    --primary-color: #244f88;
+    --secondary-color: #002240;
+    --dark-color: #343434;
+    --white-color: #fff;
+    --light-color: #f8f9fa;
+    --danger-color: #a52a2a;
+    --redish-color: #85390d;
+    --success-color: #308824;
+    --warning-color: #f8b706f1;
+    --light-blue-color: #075fb8;
+    --gray-color: #808080;
+    --light-gray-color: #d8d3d3;
+    --light-gray-color-2: #e3e3e3;
+    --black-color: #000;
+}
+
+/* End Custom properties */
+
+/* Utility classes */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.row {
+    display: flex;
+    gap: 3em;
+}
+
+.even-columns {
+    display: flex;
+}
+
+.even-columns>* {
+    flex-basis: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex, .flex-space-around, .flex-space-between, .flex-space-evenly, .even-columns {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .flex, .flex-space-around, .flex-space-between, .flex-space-evenly, .even-columns {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+}
+
+/* --- Grid --- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-ish {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.grip-ish>* {
+    flex: 1 1 10em;
+}
+
+/* --- Content Sidebar --- */
+
+.content-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-sidebar>*:nth-child(1) {
+    flex: 1 1 70%;
+    min-width: 25ch;
+}
+
+.content-sidebar>*:nth-child(2) {
+    flex: 1 1 30%;
+    min-width: 15ch;
+}
+
+/* --- Ordering --- */
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.card {
+    background-color: var(--white-color);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h2 {
+    line-height: 3.0rem;
+    font-weight: 600;
+}
+
+.card-body p, .card-body a {
+    line-height: 1.4em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--danger-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+}
+
+.btn:hover, .btn:focus {
+    background: var(--dark-color);
+}
+
+/* Backgrounds and colored buttons */
+
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.bg-white, .btn-white {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+.bg-gray, .btn-gray {
+    background: var(--gray-color);
+    color: var(--white-color);
+}
+
+.btn-gray:hover {
+    background: var(--primary-color);
+}
+
+.bg-light-gray, .btn-light-gray {
+    background: var(--light-gray-color);
+    color: var(--black-color);
+}
+
+.bg-light-gray-2, .btn-light-gray-2 {
+    background: var(--light-gray-color-2);
+    color: var(--black-color);
+}
+
+.bg-warning, .btn-warning {
+    background: var(--warning-color);
+    color: var(--black-color);
+}
+
+.bg-danger, .btn-danger {
+    background: var(--danger-color);
+    color: var(--white-color);
+}
+
+.btn-danger:hover {
+    background: var(--redish-color);
+    color: var(--white-color);
+}
+
+.bg-redish, .btn-redish {
+    background: var(--redish-color);
+    color: var(--white-color);
+}
+
+.bg-primary a, .btn-primary a, .bg-secondary a, .btn-secondary a, .bg-dark a, .btn-dark a {
+    color: var(--white-color);
+}
+
+/* === Text positions === */
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* === Text colors === */
+
+.text-light {
+    color: var(--light-color);
+}
+
+.text-white {
+    color: var(--white-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-warning {
+    color: var(--warning-color);
+}
+
+.text-danger {
+    color: var(--danger-color);
+}
+
+.text-black {
+    color: var(--black-color);
+}
+
+.text-gray {
+    color: var(--gray-color);
+}
+
+.text-light-gray {
+    color: var(--light-gray-color);
+}
+
+/* === Text sizes === */
+
+/* === Class lead === */
+
+.lead {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* === End Class lead === */
+
+.sm {
+    font-size: 1rem;
+    /* Which is equal to 16px */
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+/* === Margins === */
+
+/* All over margins */
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+/* End All over */
+
+/* Top and Bottom margins */
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+/* End Top and Bottom */
+
+/* Left and right margins */
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 1.5rem;
+}
+
+.mx-3 {
+    margin: 0 2rem;
+}
+
+.mx-4 {
+    margin: 0 3rem;
+}
+
+.mx-5 {
+    margin: 0 4rem;
+}
+
+/* End left and right */
+
+/* Top margin */
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 2rem;
+}
+
+.mt-4 {
+    margin-top: 3rem;
+}
+
+.mt-5 {
+    margin-top: 4rem;
+}
+
+/* End top margin */
+
+/* Bottom margin */
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 4rem;
+}
+
+/* End bottom margin */
+
+/* Left margin */
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 1.5rem;
+}
+
+.ml-3 {
+    margin-left: 2rem;
+}
+
+.ml-4 {
+    margin-left: 3rem;
+}
+
+.ml-5 {
+    margin-left: 4rem;
+}
+
+/* End left margin */
+
+/* Right margin */
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
+    margin-right: 1.5rem;
+}
+
+.mr-3 {
+    margin-right: 2rem;
+}
+
+.mr-4 {
+    margin-right: 3rem;
+}
+
+.mr-5 {
+    margin-right: 4rem;
+}
+
+/* End right margin */
+
+/* === End margins === */
+
+/* === Paddings === */
+
+/* All over paddings */
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
+
+/* End All over */
+
+/* Top and Bottom paddings */
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+/* End Top and Bottom */
+
+/* Top padding */
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 1.5rem;
+}
+
+.pt-3 {
+    padding-top: 2rem;
+}
+
+.pt-4 {
+    padding-top: 3rem;
+}
+
+.pt-5 {
+    padding-top: 4rem;
+}
+
+/* End Top */
+
+/* Bottom padding */
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 1.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 2rem;
+}
+
+.pb-4 {
+    padding-bottom: 3rem;
+}
+
+.pb-5 {
+    padding-bottom: 4rem;
+}
+
+/* End Bottom padding */
+
+/* Left and right paddings */
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 1.5rem;
+}
+
+.px-3 {
+    padding: 0 2rem;
+}
+
+.px-4 {
+    padding: 0 3rem;
+}
+
+.px-5 {
+    padding: 0 4rem;
+}
+
+/* End left and right */
+
+/* Left padding */
+
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pl-2 {
+    padding-left: 1.5rem;
+}
+
+.pl-3 {
+    padding-left: 2rem;
+}
+
+.pl-4 {
+    padding-left: 3rem;
+}
+
+.pl-5 {
+    padding-left: 4rem;
+}
+
+/* End left padding */
+
+/* right padding */
+
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.pr-2 {
+    padding-right: 1.5rem;
+}
+
+.pr-3 {
+    padding-right: 2rem;
+}
+
+.pr-4 {
+    padding-right: 3rem;
+}
+
+.pr-5 {
+    padding-right: 4rem;
+}
+
+/* End right padding */
+
+/* === End paddings === */
+
+/* === Displays === */
+
+.display-1 {
+    font-size: 110px;
+    font-weight: 300;
+}
+
+.display-2 {
+    font-size: 90px;
+    font-weight: 300;
+}
+
+.display-3 {
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.display-4 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/* === End displays === */
